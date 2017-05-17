@@ -1,0 +1,9 @@
+body{overflow: hidden;}
+.box{height: 100%;}
+.box .pic{height: 300px;margin-top: 150px;position:relative;transform-style: preserve-3d;perspective: 800px;}
+.box .pic img{width: 300px;position: absolute;
+-webkit-box-reflect:below 0 -webkit-linear-gradient(top,rgba(0,0,0,.1),rgba(0,0,0,.5));
+transition: 1s;}
+.box .pic .now{transform: translateZ(100px);}
+.box .pic .front{transform: rotateY(45deg) translateZ(-100px);}
+.box .pic .back{transform: rotateY(-45deg) translateZ(-100px);}
